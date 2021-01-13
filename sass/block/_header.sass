@@ -1,0 +1,86 @@
+.header
+  position: relative
+  width: 100%
+  height: 100%
+  background: url('../img/header/nav-bg.png') no-repeat top center
+  background-size: contain
+
+
+  &__nav
+    margin-top: 7.7rem
+
+  &__header-block
+    margin-top: 13.3rem
+    margin-bottom: 10.3rem
+
+  &-block
+    display: flex
+    align-items: center
+    justify-content: center
+    flex-direction: column
+    
+    &__description
+      font-size: 1.8rem
+      line-height: 2.6rem
+      color: $header-color
+    &__fees
+      color: $header-primary
+  &__title
+    margin-bottom: 3.4rem
+
+
+.nav
+  display: flex
+  align-items: center
+  justify-content: space-between
+  &__left,
+  &__right
+    display: flex
+    justify-content: space-between
+  
+
+  &__btn
+    font-family: 'Roboto Regular'
+    font-size: 1.6rem
+    border: 1px solid rgba(177, 182, 201, 0.28)
+    border-radius: 10rem
+    background-color: transparent
+    color: #6D6D6D
+    height: 5rem
+    margin-right: 1rem
+    &_personal-area
+      width: 24rem
+    &_language
+      position: relative
+      width: 8.3rem 
+      text-align-last: left
+      padding-left: 2rem
+      &::after
+        position: absolute
+        content: ''
+        display: block
+        top: 50%
+        margin-top: -0.3rem
+        right: 2rem
+        width: 1rem
+        height: 0.6rem  
+        background: url('../img/header/arrow.png') no-repeat
+        
+    &_login 
+      width: 7.9rem 
+    &_register
+      width: 13rem
+      color: #fff
+      background: -webkit-linear-gradient(180deg, rgb(85, 188, 252), rgb(61, 117, 241) 100%);
+      background: -moz-linear-gradient(180deg, rgb(85, 188, 252), rgb(61, 117, 241) 100%);
+      background: linear-gradient(180deg, rgb(85, 188, 252), rgb(61, 117, 241) 100%);
+      border: none
+    &_menu  
+      width: 5rem
+      display: flex
+      align-items: center
+      justify-content: center
+      margin-right: 0
+    &_small
+      display: none
+  
